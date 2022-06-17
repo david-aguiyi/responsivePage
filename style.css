@@ -47,7 +47,7 @@ body {
 .rightside {
     margin: auto;
     margin-top: 70px;
-    width: 330px;
+    width: 350px;
     margin-right: 200px;
 }
 
@@ -56,7 +56,7 @@ body {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 20px;
-    height: 300px;
+    height: 350px;
     margin-right: -100px;
     position: relative;
     top: 50px;
@@ -84,7 +84,7 @@ button {
 
     padding: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 10px;
     border: none;
     width: 392px;
@@ -151,6 +151,10 @@ button:active {
 }
 
 @media screen and (max-width: 320px) {
+    body {
+        background-image: url(images/mobile.png);
+    }
+
     .flexcontainer {
         display: flex;
         flex-direction: column;
@@ -178,28 +182,30 @@ button:active {
 
     .leftside {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 1px;
         margin-right: -170px;
     }
 
     .leftside p {
-        width: 80%;
+        width: 90%;
         margin-left: -50px;
+        text-align: center;
 
     }
 
     .leftside h1 {
         width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
+        font-size: 30px;
+        text-align: center;
+        margin-left: -40px;
+        font-weight: 700;
     }
 
     .formheader p {
-        width: 90%;
+        width: 100%;
     }
 
     button {
