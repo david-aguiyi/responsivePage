@@ -10,6 +10,7 @@
 body {
     background-color: rgb(230, 106, 127);
     background-image: url(images/desktop.png);
+    user-select: none;
 }
 
 .flexcontainer {
@@ -46,10 +47,7 @@ body {
 .rightside {
     margin: auto;
     margin-top: 70px;
-    /* display: flex; */
-    /* justify-content: right; */
     width: 330px;
-    /* align-items: center; */
     margin-right: 200px;
 }
 
@@ -62,7 +60,7 @@ body {
     margin-right: -100px;
     position: relative;
     top: 50px;
-    box-shadow: 0px 5px 4px 1px rgba(133, 88, 88, 0.781);
+    box-shadow: 0px 5px 2px 1px rgba(163, 86, 99, 0.945);
 }
 
 .wrapper input {
@@ -89,9 +87,9 @@ button {
     font-weight: 500;
     margin-bottom: 10px;
     border: none;
-    width: 100%;
+    width: 392px;
     margin-right: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(139, 131, 131, 0.781);
+    box-shadow: 0px 2px 2px 1px rgba(163, 155, 155, 0.781);
     border-radius: 5px;
     background-color: hsl(154, 59%, 51%);
     color: white;
@@ -129,14 +127,27 @@ button:active {
     top: 50px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0px 5px 4px 1px rgba(133, 88, 88, 0.781);
+    box-shadow: 0px 5px 2px 1px rgba(163, 86, 99, 0.945);
 }
 
 .flexwrapper {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .leftside {
+        margin-left: -300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .leftside h1 {
+        margin-left: 51px;
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -172,6 +183,7 @@ button:active {
         align-items: center;
         width: 100%;
         margin-top: 1px;
+        margin-right: -170px;
     }
 
     .leftside p {
@@ -183,21 +195,15 @@ button:active {
     .leftside h1 {
         width: 100%;
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .formheader p {
         width: 90%;
     }
 
-}
-
-@media screen and (max-width: 1024px) {
-    .leftside {
-        /* margin-left: -150px; */
-        display: flex;
-        /* width: 80%; */
-
+    button {
+        width: 230px;
     }
-
 
 }
