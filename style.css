@@ -119,7 +119,7 @@ button:active {
 
 .formheader {
     background-color: hsl(248, 32%, 49%);
-    width: 400px;
+    width: 420px;
     text-align: center;
     padding: 1em;
     margin: auto;
@@ -184,7 +184,6 @@ button:active {
 
     .leftside {
         display: flex;
-        /* justify-content: center; */
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -193,7 +192,7 @@ button:active {
 
     .leftside p {
         width: 100%;
-        margin-left: -50px;
+        margin-left: -57px;
         text-align: center;
 
     }
@@ -206,12 +205,16 @@ button:active {
         font-weight: 700;
     }
 
+    .formheader {
+        width: 220px;
+    }
+
     .formheader p {
         width: 100%;
     }
 
     button {
-        width: 230px;
+        width: 220px;
     }
 
 }
